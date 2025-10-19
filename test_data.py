@@ -21,6 +21,6 @@ def test_data_types():
 
     feature_columns = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
     for col in feature_columns:
-        assert pd.api.types.is_numeric_dtype(df[col]), f"Column '{col}' is not numeric."
+        assert pd.api.types.is_numeric_dtype(df[col]), f"Column '{col}' doesn't contain numbers."
 
         
